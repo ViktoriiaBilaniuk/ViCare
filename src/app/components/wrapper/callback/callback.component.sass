@@ -1,0 +1,95 @@
+*
+  margin: 0px
+  padding: 0px
+  box-sizing: border-box
+  outline: none
+  font-family: Verdana
+  transition: all 0.2s
+.bottom
+  padding-top: 40px
+  -webkit-box-shadow: 3px 3px 20px 0 rgba(222, 222, 222, 0.69)
+  -moz-box-shadow: 3px 3px 20px 0 rgba(222, 222, 222, 0.69)
+  box-shadow: 3px 3px 20px 0 rgba(222, 222, 222, 0.69)
+  p
+    font-size: 16px
+    width: 100%
+    text-align: center
+  #callback
+    padding: 30px 50px 30px 50px
+    width: 100%
+    display: flex
+    justify-content: space-between
+    .first_block
+      width: 23%
+      #firstchild
+        margin-bottom: 10px
+    input
+      border-radius: 10px
+      padding: 0px 10px
+      -webkit-box-shadow: 3px 3px 7px 0px rgba(174, 174, 174, 0.23)
+      -moz-box-shadow: 3px 3px 7px 0px rgba(174, 174, 174, 0.23)
+      box-shadow:  3px 3px 7px 0px rgba(174, 174, 174, 0.23)
+    input[type="text"]:focus, input[type="email"]:focus, textarea:focus
+      border-color: black
+
+    input[type="text"], input[type="email"]
+      width: 100%
+      border: none
+      border-bottom: 2px solid #a7a7a7
+      border-radius: 0px
+      height: 28px
+    input, textarea
+      display: flex
+      justify-content: space-between
+    textarea
+      @extend input
+      width: 55%
+      vertical-align: middle
+      border: none
+      border-bottom: 2px solid #a7a7a7
+      border-radius: 0px
+    textarea::-moz-placeholder,textarea::-webkit-input-placeholder,textarea:-ms-input-placeholder
+      line-height: 800px
+    input[type="submit"]
+      background: url('../../../../assets/images/email.png') #FFF no-repeat  right
+      background-repeat: no-repeat
+      background-size: cover
+      color: transparent
+      display: block
+      height: 66px
+      border: none
+      width: 80px
+      -webkit-box-shadow: 3px 3px 7px 0px rgba(174, 174, 174, 0.23)
+      -moz-box-shadow: 3px 3px 7px 0px rgba(174, 174, 174, 0.23)
+      box-shadow:  3px 3px 7px 0px rgba(174, 174, 174, 0.23)
+    input[type="submit"]:hover
+      transform: scale(1.15)
+      cursor: pointer
+  footer
+    width: 100%
+    display: flex
+    justify-content: space-between
+    padding: 40px 50px 10px 60px
+    .logo
+      img
+        width: 140px
+      img:hover
+        cursor: pointer
+        transform: scale(1.15)
+    .follow
+      width: 15%
+      display: flex
+      justify-content: space-between
+      h5
+        padding-right: 27px
+        line-height: 3
+        text-transform: uppercase
+        font-weight: 400
+        font-size: 10px
+      img
+        width: 26px
+        border-radius: 8px
+      img:hover
+        transform: scale(1.2)
+        cursor: pointer
+

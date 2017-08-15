@@ -1,0 +1,62 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  transition: all 0.2s linear;
+  font-family: FuturaBook; }
+
+.container {
+  width: 1200px;
+  margin: 0 auto;
+  position: relative; }
+
+a:active, a:focus, a:hover, a:visited, button:focus {
+  text-decoration: none;
+  border: none; }
+
+.menu {
+  display: flex;
+  width: 100%;
+  margin-left: 0;
+  padding: 5px 40px;
+  line-height: 4;
+  background-color: white;
+  -webkit-box-shadow: 3px 3px 20px 0 rgba(222, 222, 222, 0.69);
+  -moz-box-shadow: 3px 3px 20px 0 rgba(222, 222, 222, 0.69);
+  box-shadow: 3px 3px 20px 0 rgba(222, 222, 222, 0.69);
+  position: fixed; }
+  .menu img {
+    width: 170px; }
+  .menu nav {
+    display: flex;
+    width: 70%;
+    justify-content: center;
+    margin: 0 100px; }
+    .menu nav a {
+      justify-content: space-between;
+      text-decoration: none;
+      color: black;
+      text-transform: uppercase;
+      font-size: 13px;
+      letter-spacing: 0.02em;
+      margin: 20px 50px 0; }
+    .menu nav a:hover {
+      color: #989898;
+      transform: scale(1.02);
+      cursor: pointer; }
+  .menu .backet {
+    background-color: transparent;
+    color: black;
+    border: none; }
+    .menu .backet img {
+      width: 20px; }
+    .menu .backet span {
+      font-size: 16px;
+      vertical-align: super; }
+  .menu .backet:hover {
+    border: none;
+    cursor: pointer;
+    color: #5d1263; }
+
+/*# sourceMappingURL=menu.component.css.map */

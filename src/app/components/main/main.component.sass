@@ -1,0 +1,41 @@
+$violet: #5d1263
+$rose: #ffbfeb
+$grey: #e1e1e1
+@font-face
+  font-family: "FuturaBook"
+  src: url("../../../assets/fonts/futura/Futura TOT Book.ttf") format("ttf")
+
+
+*
+  padding: 0
+  margin: 0
+  box-sizing: border-box
+  font-family: FuturaBook
+.main
+  width: 100%
+  .first
+    height: 780px
+    background: url('../../../assets/images/face22.jpg') #FFF no-repeat  right
+  .second
+    height: 750px
+    background: url('../../../assets/images/green2.jpg') #000 no-repeat fixed center
+    background-size: cover
+    img
+      width: 100%
+
+  .third
+    height: 700px
+    background-size: contain
+    background: url('../../../assets/images/face3.jpg') #FFF no-repeat  right
+
+    .icons
+      margin-left: 9%
+      .icon
+        display: inline-flex
+        width: 60%
+        h4
+          line-height: 81px
+        p
+          display: inline-block
+          font-size: 62px
+          color: $violet

@@ -1,0 +1,37 @@
+@font-face {
+  font-family: "FuturaBook";
+  src: url("../../../assets/fonts/futura/Futura TOT Book.ttf") format("ttf"); }
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: FuturaBook; }
+
+.main {
+  width: 100%; }
+  .main .first {
+    height: 780px;
+    background: url("../../../assets/images/face22.jpg") #FFF no-repeat right; }
+  .main .second {
+    height: 750px;
+    background: url("../../../assets/images/green2.jpg") #000 no-repeat fixed center;
+    background-size: cover; }
+    .main .second img {
+      width: 100%; }
+  .main .third {
+    height: 700px;
+    background-size: contain;
+    background: url("../../../assets/images/face3.jpg") #FFF no-repeat right; }
+    .main .third .icons {
+      margin-left: 9%; }
+      .main .third .icons .icon {
+        display: inline-flex;
+        width: 60%; }
+        .main .third .icons .icon h4 {
+          line-height: 81px; }
+        .main .third .icons .icon p {
+          display: inline-block;
+          font-size: 62px;
+          color: #5d1263; }
+
+/*# sourceMappingURL=main.component.css.map */
