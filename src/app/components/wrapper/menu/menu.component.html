@@ -6,12 +6,14 @@
     <a [routerLink]="['/ingradient/']">інградієнти</a>
     <a href="#callback">зв'язатися</a>
   </nav>
-  <a [routerLink]="['/order/']">
+  <a (click)="openOrder()">
     <button class="backet">
       <img src="assets/images/cart.jpg" alt="cart">
-      <span id="count"> +4</span>
+      <span id="count"> {{orderService.order.products.length}}</span>
     </button>
+    <label>Товарів у вашій корзині: {{orderService.order.products.length}}</label>
   </a>
+  <app-order (close)="openOrder()" [ngStyle]="{'display': visibility? 'block' : 'none'}"></app-order>
 
 </div>
 

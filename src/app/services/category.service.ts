@@ -5,19 +5,22 @@ import {Category} from "../models/category";
 export class CategoryService {
   categories = [
     {
-      name: 'For hair',
+      name: 'Для волосся',
       url: 'hair',
-      file: 'hair.json'
+      file: 'hairDb.json',
+      image: '../../../../assets/images/hair.jpg'
     },
     {
-      name: 'For body',
+      name: 'Для тіла',
       url: 'body',
-      file: 'body.json'
+      file: 'bodyDb.json',
+      image: '../../../../assets/images/body.jpg'
     },
     {
-      name: 'For face',
+      name: 'Для обличчя',
       url: 'face',
-      file: 'face.json'
+      file: 'faceDb.json',
+      image: '../../../../assets/images/2.jpg'
     }
   ]
   constructor() { }

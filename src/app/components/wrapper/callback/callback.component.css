@@ -3,87 +3,104 @@
   padding: 0px;
   box-sizing: border-box;
   outline: none;
-  font-family: Verdana;
-  transition: all 0.2s; }
+  font-family: FuturaBookC;
+  transition: 0.2s ease all;
+  -moz-transition: 0.2s ease all;
+  -webkit-transition: 0.2s ease all; }
 
 .bottom {
-  padding-top: 40px;
+  padding-top: 130px;
+  padding-bottom: 150px;
   -webkit-box-shadow: 3px 3px 20px 0 rgba(222, 222, 222, 0.69);
   -moz-box-shadow: 3px 3px 20px 0 rgba(222, 222, 222, 0.69);
-  box-shadow: 3px 3px 20px 0 rgba(222, 222, 222, 0.69); }
-  .bottom p {
-    font-size: 16px;
-    width: 100%;
-    text-align: center; }
+  box-shadow: 3px 3px 20px 0 rgba(222, 222, 222, 0.69);
+  display: flex;
+  justify-content: space-between;
+  background-image: url("../../../../assets/images/back3.png");
+  background-repeat: no-repeat;
+  background-size: contain; }
   .bottom #callback {
-    padding: 30px 50px 30px 50px;
-    width: 100%;
-    display: flex;
-    justify-content: space-between; }
-    .bottom #callback .first_block {
-      width: 23%; }
-      .bottom #callback .first_block #firstchild {
-        margin-bottom: 10px; }
-    .bottom #callback input, .bottom #callback textarea {
-      border-radius: 10px;
-      padding: 0px 10px;
-      -webkit-box-shadow: 3px 3px 7px 0px rgba(174, 174, 174, 0.23);
-      -moz-box-shadow: 3px 3px 7px 0px rgba(174, 174, 174, 0.23);
-      box-shadow: 3px 3px 7px 0px rgba(174, 174, 174, 0.23); }
-    .bottom #callback input[type="text"]:focus, .bottom #callback textarea[type="text"]:focus, .bottom #callback input[type="email"]:focus, .bottom #callback textarea[type="email"]:focus, .bottom #callback textarea:focus {
-      border-color: black; }
-    .bottom #callback input[type="text"], .bottom #callback textarea[type="text"], .bottom #callback input[type="email"], .bottom #callback textarea[type="email"] {
+    padding: 10px 40px 0px 40px;
+    margin: 30px 50px 30px 150px;
+    width: 40%;
+    border: 1px solid #e1e1e1;
+    display: block;
+    background-color: #e1e1e1;
+    border-radius: 20px; }
+    .bottom #callback p {
+      font-size: 16px;
       width: 100%;
-      border: none;
-      border-bottom: 2px solid #a7a7a7;
-      border-radius: 0px;
-      height: 28px; }
-    .bottom #callback input, .bottom #callback textarea, .bottom #callback textarea {
-      display: flex;
-      justify-content: space-between; }
-    .bottom #callback textarea {
-      width: 55%;
-      vertical-align: middle;
-      border: none;
-      border-bottom: 2px solid #a7a7a7;
-      border-radius: 0px; }
-    .bottom #callback textarea::-moz-placeholder, .bottom #callback textarea::-webkit-input-placeholder, .bottom #callback textarea:-ms-input-placeholder {
-      line-height: 800px; }
-    .bottom #callback input[type="submit"], .bottom #callback textarea[type="submit"] {
-      background: url("../../../../assets/images/email.png") #FFF no-repeat right;
-      background-repeat: no-repeat;
-      background-size: cover;
+      text-align: center;
+      margin-top: 10px;
+      text-transform: uppercase;
+      color: #bd77a7; }
+    .bottom #callback .group {
+      position: relative;
+      margin-top: 28px; }
+      .bottom #callback .group input {
+        font-size: 18px;
+        padding: 10px 10px 10px 5px;
+        display: block;
+        width: 100%;
+        border: none;
+        border-radius: 3px; }
+      .bottom #callback .group input:focus {
+        outline: none; }
+      .bottom #callback .group label {
+        color: #999;
+        font-size: 18px;
+        font-weight: normal;
+        position: absolute;
+        pointer-events: none;
+        left: 5px;
+        top: 10px; }
+      .bottom #callback .group input:focus ~ label, .bottom #callback .group input:valid ~ label {
+        top: -20px;
+        font-size: 14px;
+        color: #5d1263; }
+      .bottom #callback .group .bar {
+        position: relative;
+        display: block;
+        width: 100%; }
+      .bottom #callback .group .bar:before, .bottom #callback .group .bar:after {
+        content: "";
+        height: 2px;
+        width: 0;
+        bottom: 1px;
+        position: absolute;
+        background: #5d1263; }
+      .bottom #callback .group input:focus ~ .bar:before, .bottom #callback .group input:focus ~ .bar:after {
+        width: 100%;
+        transition: 0.2s all; }
+    .bottom #callback input[type="submit"] {
+      background: url("../../../../assets/images/email2.png") #FFF no-repeat right;
+      background-size: contain;
       color: transparent;
       display: block;
-      height: 66px;
+      height: 50px;
+      border-radius: 50px;
       border: none;
-      width: 80px;
-      -webkit-box-shadow: 3px 3px 7px 0px rgba(174, 174, 174, 0.23);
-      -moz-box-shadow: 3px 3px 7px 0px rgba(174, 174, 174, 0.23);
-      box-shadow: 3px 3px 7px 0px rgba(174, 174, 174, 0.23); }
-    .bottom #callback input[type="submit"]:hover, .bottom #callback textarea[type="submit"]:hover {
+      width: 50px;
+      margin: 13px auto; }
+    .bottom #callback input[type="submit"]:hover {
       transform: scale(1.15);
       cursor: pointer; }
   .bottom footer {
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    padding: 40px 50px 10px 60px; }
-    .bottom footer .logo img {
-      width: 140px; }
-    .bottom footer .logo img:hover {
-      cursor: pointer;
-      transform: scale(1.15); }
+    width: 40%;
+    display: block;
+    padding: 70px 50px 60px 50px; }
+    .bottom footer .logo {
+      text-align: center;
+      margin-bottom: 15px; }
+      .bottom footer .logo img {
+        width: 300px; }
+      .bottom footer .logo img:hover {
+        cursor: pointer;
+        transform: scale(1.15); }
     .bottom footer .follow {
-      width: 15%;
-      display: flex;
-      justify-content: space-between; }
-      .bottom footer .follow h5 {
-        padding-right: 27px;
-        line-height: 3;
-        text-transform: uppercase;
-        font-weight: 400;
-        font-size: 10px; }
+      width: 100%;
+      display: block;
+      text-align: center; }
       .bottom footer .follow img {
         width: 26px;
         border-radius: 8px; }

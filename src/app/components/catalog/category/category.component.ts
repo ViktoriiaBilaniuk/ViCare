@@ -13,6 +13,7 @@ export class CategoryComponent implements OnInit {
 
   ngOnInit() {
     this.categories = this.categoryService.categories;
+    window.scrollTo(0, 0);
   }
   onSelect(url: string) {
     this.router.navigate(['catalog/categories/', url]);
