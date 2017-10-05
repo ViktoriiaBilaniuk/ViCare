@@ -15,7 +15,7 @@ import {OrderedProduct} from '../../../../models/orderedProduct';
 })
 export class CurrentCategoryComponent implements OnInit {
   sub: any;
-  category: Category;
+  category: Category;ng
   products: Product[] = [];
   orderedProduct: OrderedProduct;
   visibility: any = false;
