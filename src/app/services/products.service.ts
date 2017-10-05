@@ -9,6 +9,7 @@ export class ProductsService {
   getProducts(fileUrl: string) {
     return this.http.get(`http://localhost:4200/assets/db/${fileUrl}`);
   }
+  //bgfnhmj
   setProduct(product: Product) {
     this.selectedProduct = product;
   }
